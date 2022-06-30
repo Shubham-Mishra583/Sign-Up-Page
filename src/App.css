@@ -1,0 +1,401 @@
+/* Outer box */
+.main{
+    width: 1006px;
+    /* width: 65.8%; */
+    height: 601px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* inner box */
+.container{
+    width: 968px;
+    /* width: 96%; */
+    height: 561px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* left half */
+.leftside{
+    width: 396px;
+    /* width: 40%; */
+    height: 285px;
+    position: absolute;
+    right: 510px;
+    top: 160px;
+}
+
+.leftside .heading{
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.leftside .heading p:nth-child(2){
+    color: #4c15f6;
+}
+
+.leftside .content{
+    margin-top: 60px;
+    color: #767d8f;
+}
+
+/* form  */
+.rightside{
+    width: 392px;
+    /* width: 40%; */
+    height: 466px;
+    background-color: white;
+    position: absolute;
+    right: 72px;
+    top: 48px;
+    border-radius: 10px;
+    
+}
+
+/* flextop */
+.flex-container-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 25px;
+    width: 100%;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.flex-col span{
+    color: red;
+}
+
+.flex-col .flex-item{
+    width: 292px;
+    margin-top: 25px;
+}
+
+.flex-row{
+    display: flex;
+    width: 290px;
+    /* width: 87%; */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-row .flex-item{
+    width: 132px;
+}
+
+/* input box for first and last name */
+.flex-row .flex-item{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* input box for email and password */
+.flex-col .flex-item{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Flex bottom */
+.flex-container-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 45%;
+    margin-top: -20px;
+}
+
+.flex-container-bottom .flex-item:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+
+/* sign up button */
+.flex-container-bottom button{
+    background-color: #4c15f6;
+    color: white;
+    width: 292px;
+    height: 36px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+}
+
+.flex-container-bottom .flex-item:nth-child(4){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 166px;
+}
+
+/* social media icons */
+.fa-brands{
+    color: #4c15f6;
+    font-size: 13px;
+}
+
+/* checkbox */
+.flex-container-bottom .checkbox{
+    width: 18px;
+    height: 18px;
+}
+
+/* google oauth login button */
+.login{
+    text-align: center;
+    margin: 20px;
+}
+
+
+/* responsiveness */
+
+@media only screen and (max-width : 1006px){
+    .main{
+        width: 900px;
+        height: 500px;
+    }
+
+    .container{
+        width: 868px;
+        /* width: 96%; */
+        height: 461px;
+    }
+
+    .leftside{
+        width: 380px;
+        height: 200px;
+        right: 450px;
+        top: 120px;
+    }
+
+    .leftside .heading{
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .leftside .content{
+        margin-top: 30px;
+    }
+
+    .rightside{
+        width: 325px;
+        height: 366px;
+        right: 82px;
+        top: 38px;
+    }
+
+    .flex-col .flex-item{
+        width: 250px;
+        margin-top: 20px;
+    }
+    
+    .flex-row{
+        width: 248px;
+    }
+
+    .flex-row .flex-item{
+        width: 118px;
+    }
+
+    .flex-row .flex-item{
+        padding: 2px;
+    }
+    
+    .flex-col .flex-item{
+        padding: 2px;
+    }
+
+    .flex-container-bottom .flex-item:nth-child(1){
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .flex-container-bottom{
+        margin-top: -26px;
+    }
+
+    .flex-container-bottom button{
+        width: 250px;
+        height: 26px;
+    }
+
+    .login{
+        width: 0px;
+    }
+}
+
+
+@media only screen and (max-width : 992px){
+    .main{
+        width: 800px;
+        height: 400px;
+    }
+
+    .container{
+        width: 768px;
+        /* width: 96%; */
+        height: 361px;
+    }
+
+    .leftside{
+        width: 302px;
+        height: 100px;
+        right: 360px;
+        top: 35px;
+    }
+
+    .leftside .heading{
+        font-size: 36px;
+        font-weight: 750;
+        line-height: 24px;
+    }
+
+    .leftside .content{
+        margin-top: 0px;
+        font-size: 14px;
+    }
+
+    .rightside{
+        width: 245px;
+        height: 320px;
+        right: 80px;
+    }
+
+    .flex-col .flex-item{
+        width: 150px;
+        margin-top: 16px;
+    }
+    
+    .flex-row{
+        width: 185px;
+    }
+
+    .flex-row .flex-item{
+        width: 88px;
+    }
+
+    .flex-row .flex-item{
+        padding: 2px;
+    }
+    
+    .flex-col .flex-item{
+        padding: 2px;
+        width: 180px;
+    }
+    
+    .flex-container-top{
+        margin-top: -10px;
+    }
+
+    .flex-container-bottom .flex-item:nth-child(1){
+        width: 170px;
+        font-size: 12px;
+    }
+
+    .flex-container-bottom .flex-item{
+        font-size: 14px;
+    }
+
+    .flex-container-bottom{
+        margin-top: -20px;
+    }
+
+    .flex-container-bottom button{
+        width: 150px;
+        height: 18px;
+        font-size: 10px;
+    }
+
+    .flex-container-bottom .flex-item:nth-child(4){
+        width: 100px;
+    }
+
+    .fa-brands{
+        font-size: 10px;
+    }
+}
+
+
+@media only screen and (max-width : 800px){
+    .main{
+        width: 95%;
+        height: 100vh;
+    }
+
+    .container{
+        width: 100%;
+        /* width: 96%; */
+        height: 94vh;
+    }
+
+    .leftside{
+        width: 80%;
+        height: 100px;
+        right: 40px;
+        top: 35px;
+    }
+
+    .rightside{
+        width: 245px;
+        height: 320px;
+        right: 30%;
+        top: 310px;
+    }
+
+  
+}
+
+
+@media only screen and (max-width : 768px){
+    .main{
+        width: 80%;
+        height: 100vh;
+    }
+
+    .container{
+        width: 90%;
+        /* width: 96%; */
+        height: 94vh;
+    }
+
+    .rightside{
+        width: 245px;
+        height: 320px;
+        right: 30%;
+        top: 310px;
+    }
+
+  
+}
+
+@media only screen and (max-width : 600px){
+
+
+    .rightside{
+        width: 245px;
+        height: 320px;
+        right: 20%;
+        top: 310px;
+    }
+  
+}
